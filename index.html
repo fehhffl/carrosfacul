@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Supercarros</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            .footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background-color: #f8f9fa;
+                padding: 20px 0;
+            }
+            body {
+                padding-bottom: 100px;
+            }
+            .carousel-item img {
+                height: 500px;
+                object-fit: cover;
+            }
+            .card img {
+                height: 200px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fas fa-car"></i> Supercarros</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-car-side"></i> Modelos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-cogs"></i> Especificações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/ferrari-sf90-spider.jpg" class="d-block w-100" alt="Ferrari SF90 Spider" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ferrari SF90 Spider</h5>
+                        <p>O primeiro supercarro híbrido plug-in da Ferrari</p>
+                        <button class="btn btn-outline-light">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/lamborghini-revuelto.jpg" class="d-block w-100" alt="Lamborghini Revuelto" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lamborghini Revuelto</h5>
+                        <p>O novo supercarro híbrido da Lamborghini</p>
+                        <button class="btn btn-outline-light">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/mclaren-570s-.jpg" class="d-block w-100" alt="McLaren 570S" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>McLaren 570S</h5>
+                        <p>Um supercarro britânico de alto desempenho</p>
+                        <button class="btn btn-outline-light">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Cards -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4 fade-in">Nossos Supercarros</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card fade-in">
+                        <img src="images/ferrari-812-superfast.jpg" class="card-img-top" alt="Ferrari 812 Superfast" />
+                        <div class="card-body">
+                            <h5 class="card-title">Ferrari 812 Superfast</h5>
+                            <p class="card-text">Motor V12 de 6.5L com 800cv, 0-100km/h em 2.9s</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+                                <span class="badge bg-danger">Novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card fade-in">
+                        <img src="images/bmw-m4-f82-coupe.jpg" class="card-img-top" alt="BMW M4 F82 Coupe" />
+                        <div class="card-body">
+                            <h5 class="card-title">BMW M4 F82 Coupe</h5>
+                            <p class="card-text">Motor 3.0L Twin-Turbo com 431cv, 0-100km/h em 4.1s</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+                                <span class="badge bg-danger">Novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card fade-in">
+                        <img
+                            src="images/jaguar-f-type-svr-coupe.jpg"
+                            class="card-img-top"
+                            alt="Jaguar F-Type SVR Coupe"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Jaguar F-Type SVR</h5>
+                            <p class="card-text">Motor V8 5.0L com 575cv, 0-100km/h em 3.7s</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+                                <span class="badge bg-danger">Novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card fade-in">
+                        <img
+                            src="images/porsche-718-cayman-gt4-rs-weissach-package.jpg"
+                            class="card-img-top"
+                            alt="Porsche 718 Cayman GT4 RS"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">Porsche 718 Cayman GT4 RS</h5>
+                            <p class="card-text">Motor 4.0L Flat-6 com 500cv, 0-100km/h em 3.4s</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+                                <span class="badge bg-danger">Novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card fade-in">
+                        <img src="images/porsche-991-turbo-s.jpg" class="card-img-top" alt="Porsche 991 Turbo S" />
+                        <div class="card-body">
+                            <h5 class="card-title">Porsche 991 Turbo S</h5>
+                            <p class="card-text">Motor 3.8L Twin-Turbo com 580cv, 0-100km/h em 2.9s</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+                                <span class="badge bg-danger">Novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card fade-in">
+                        <img src="images/rolls-royce-spectre.jpg" class="card-img-top" alt="Rolls-Royce Spectre" />
+                        <div class="card-body">
+                            <h5 class="card-title">Rolls-Royce Spectre</h5>
+                            <p class="card-text">O primeiro carro elétrico da Rolls-Royce</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+                                <span class="badge bg-danger">Novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card fade-in">
+                        <img src="images/mercedes-amg-a-45-s.jpg" class="card-img-top" alt="Mercedes-AMG A 45 S" />
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes-AMG A 45 S</h5>
+                            <p class="card-text">Motor 2.0L Turbo com 421cv, 0-100km/h em 3.9s</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+                                <span class="badge bg-danger">Novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card fade-in">
+                        <img src="images/ferrari-sf90-spider.jpg" class="card-img-top" alt="Ferrari SF90 Spider" />
+                        <div class="card-body">
+                            <h5 class="card-title">Ferrari SF90 Spider</h5>
+                            <p class="card-text">Motor V8 4.0L + 3 motores elétricos, 1000cv</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+                                <span class="badge bg-danger">Novo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Accordion -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4 fade-in">Informações Técnicas</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                        >
+                            Especificações dos Motores
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Ferrari SF90 Spider: V8 4.0L + 3 motores elétricos (1000cv)</li>
+                                <li>Lamborghini Revuelto: V12 6.5L + 3 motores elétricos (1015cv)</li>
+                                <li>McLaren 570S: V8 3.8L Twin-Turbo (570cv)</li>
+                                <li>Ferrari 812 Superfast: V12 6.5L (800cv)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                        >
+                            Desempenho
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Ferrari SF90 Spider: 0-100km/h em 2.5s</li>
+                                <li>Lamborghini Revuelto: 0-100km/h em 2.5s</li>
+                                <li>McLaren 570S: 0-100km/h em 3.2s</li>
+                                <li>Ferrari 812 Superfast: 0-100km/h em 2.9s</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree"
+                        >
+                            Tecnologias
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Sistemas de tração integral</li>
+                                <li>Controle de estabilidade avançado</li>
+                                <li>Freios regenerativos</li>
+                                <li>Modos de condução personalizáveis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4 fade-in">Agende um Test Drive</h2>
+            <form class="fade-in">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <input type="email" class="form-control" id="exampleInputEmail1" />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="carModel" class="form-label">Modelo de Interesse</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-car"></i></span>
+                        <select class="form-select" id="carModel">
+                            <option selected>Selecione um modelo</option>
+                            <option>Ferrari SF90 Spider</option>
+                            <option>Lamborghini Revuelto</option>
+                            <option>McLaren 570S</option>
+                            <option>Ferrari 812 Superfast</option>
+                            <option>BMW M4 F82 Coupe</option>
+                            <option>Jaguar F-Type SVR</option>
+                            <option>Porsche 718 Cayman GT4 RS</option>
+                            <option>Porsche 991 Turbo S</option>
+                            <option>Rolls-Royce Spectre</option>
+                            <option>Mercedes-AMG A 45 S</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Agendar Test Drive
+                </button>
+            </form>
+        </div>
+
+        <!-- Botão Voltar ao Topo -->
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h5>Contato</h5>
+                        <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                        <p><i class="fas fa-envelope"></i> contato@supercarros.com</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5>Redes Sociais</h5>
+                        <div class="social-icons">
+                            <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h5>Horário</h5>
+                        <p>Seg-Sex: 9h às 18h</p>
+                        <p>Sáb: 9h às 14h</p>
+                    </div>
+                </div>
+                <hr />
+                <p class="text-center mb-0">© 2024 Supercarros. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+        <!-- Botão para esconder/mostrar o rodapé -->
+        <button class="footer-toggle" id="footerToggle">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script>
+            // Animação de Scroll
+            const fadeElements = document.querySelectorAll(".fade-in");
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1
+                }
+            );
+
+            fadeElements.forEach((element) => {
+                observer.observe(element);
+            });
+
+            // Botão Voltar ao Topo
+            const backToTop = document.getElementById("backToTop");
+
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add("visible");
+                } else {
+                    backToTop.classList.remove("visible");
+                }
+            });
+
+            backToTop.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+            // Controle do rodapé
+            const footer = document.querySelector(".footer");
+            const footerToggle = document.getElementById("footerToggle");
+
+            footerToggle.addEventListener("click", () => {
+                footer.classList.toggle("hidden");
+                footerToggle.classList.toggle("active");
+            });
+        </script>
+    </body>
+</html>
