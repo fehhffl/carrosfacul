@@ -79,10 +79,6 @@ supercars-website/
 2. Abra o arquivo `index.html` em seu navegador
 3. Explore os diferentes componentes implementados
 
-## 📝 Licença
-
-Este projeto está sob a licença MIT.
-
 ## 👨‍💻 Autor
 
 Felipe Forioni
